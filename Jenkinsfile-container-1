@@ -3,6 +3,8 @@ pipeline {
   stages {
     stage('Delete image if exists') {
       steps {
+        sh 'whoaimi'
+        sh 'docker run hello-world'
         sh 'docker rmi java-docker:latest'
       }
     }
